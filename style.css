@@ -1,0 +1,51 @@
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f15b;
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+}
+
+.output{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#previous{
+    display: none;
+    text-align: right;
+    font-size: 20px;
+}
+
+#current{
+    text-align: right;
+    font-size: 20px;
+}
+
+.calculatorBtns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+
+}
+
+
+.span-two{
+    grid-column: span 2;
+}
